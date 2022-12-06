@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
             android:id="@+id/header"
-        android:text="Welcome to Verse Viewer"
+        android:text="@string/Header"
         android:textSize="20dp"
         android:gravity="center"
 
@@ -79,11 +79,13 @@ android:textColor="@color/black"
             android:text="بسم الله الرحمن الرحيم"
             android:gravity="center_horizontal"
             android:textColor="@color/black"
+
+            android:background="@color/muave"
             android:textSize="20dp"
             android:layout_marginTop="20dp"
             android:padding="20dp"
             android:layout_below="@+id/submit"
-            android:layout_marginHorizontal="40dp"
+
             android:id="@+id/bism"/>
         <TextView
             android:layout_width="match_parent"

@@ -4,4 +4,5 @@
     <string name="surah_txt">Surah_Number</string>
     <string name="verse">Enter Verse Number</string>
     <string name="verse_txt">Verse_Number</string>
+    <string name="Header">Welcome to Verse Viewer</string>
 </resources>
