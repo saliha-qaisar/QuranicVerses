@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+            android:id="@+id/header"
+        android:text="Welcome to Verse Viewer"
+        android:textSize="20dp"
+        android:gravity="center"
+
+        android:textColor="@color/black"
+        android:background="@color/muave"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:id="@+id/surah_txt"
+                android:text="@string/surah"
+android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+                android:textSize="15dp"
+            android:layout_below="@+id/header"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/surah_val"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_below="@+id/surah_txt"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verse_txt"
+            android:text="@string/verse"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_below="@+id/surah_val"
+
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/verse_val"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_below="@+id/verse_txt"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:id="@+id/submit"
+            android:layout_below="@+id/verse_val"
+                android:text="Show"
+                android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_weight="1"
+                android:text="Quranic Verse"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:layout_below="@+id/submit"
+            android:layout_marginHorizontal="40dp"
+                android:id="@+id/Show_verse"/>
+
+       
+        
+
+
+        
+
+
+
+
+
+
+
+
+</RelativeLayout>
