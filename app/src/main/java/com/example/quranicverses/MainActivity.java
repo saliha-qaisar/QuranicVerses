@@ -2,6 +2,8 @@ package com.example.quranicverses;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -11,6 +13,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.Console;
+import java.net.URI;
 
 public class MainActivity extends AppCompatActivity {
     EditText surah_num;
@@ -31,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         commit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                Uri webpage = Uri.parse("https://github.com/saliha-qaisar/QuranicVerses/pulse/monthly");
+                Intent intent = new Intent(Intent.ACTION_VIEW, webpage);
+                startActivity(intent);
 
             }
         });
