@@ -70,8 +70,18 @@ android:textColor="@color/black"
             android:layout_height="wrap_content"
                 android:id="@+id/submit"
             android:layout_below="@+id/verse_val"
+
                 android:text="Show"
                 android:gravity="center"
+            android:layout_centerHorizontal="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commit"
+            android:layout_below="@+id/submit"
+
+            android:text="Commit"
+            android:gravity="center"
             android:layout_centerHorizontal="true"/>
         <TextView
             android:layout_width="match_parent"
@@ -84,9 +94,17 @@ android:textColor="@color/black"
             android:textSize="20dp"
             android:layout_marginTop="20dp"
             android:padding="20dp"
-            android:layout_below="@+id/submit"
+            android:layout_below="@+id/commit"
 
             android:id="@+id/bism"/>
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_below="@+id/bism"
+            android:fillViewport="true">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,17 +118,7 @@ android:textColor="@color/black"
             android:layout_below="@+id/bism"
             android:layout_marginHorizontal="40dp"
                 android:id="@+id/Show_verse"/>
-
-       
-        
-
-
-        
-
-
-
-
-
+        </ScrollView>
 
 
 
