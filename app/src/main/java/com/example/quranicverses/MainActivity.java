@@ -15,7 +15,7 @@ import java.io.Console;
 public class MainActivity extends AppCompatActivity {
     EditText surah_num;
     EditText verse_num;
-    Button submit;
+    Button submit,commit;
     TextView txtView;
 
     @Override
@@ -26,7 +26,14 @@ public class MainActivity extends AppCompatActivity {
         verse_num=findViewById(R.id.verse_val);
         submit=findViewById(R.id.submit);
         txtView=findViewById(R.id.Show_verse);
+        commit=findViewById(R.id.commit);
         QDH q1=new QDH();
+        commit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+            }
+        });
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

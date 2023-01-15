@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    tools:context=".MainActivity">
+
+
+
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+            android:id="@+id/header"
+        android:text="@string/Header"
+        android:textSize="20dp"
+        android:gravity="center"
+
+        android:textColor="@color/black"
+        android:background="@color/muave"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:id="@+id/surah_txt"
+                android:text="@string/surah"
+                android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="20dp"
+                android:textSize="15dp"
+            android:layout_below="@+id/header"
+            android:layout_alignParentLeft="true"
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/surah_val"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/surah_txt"
+            android:layout_below="@+id/header"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verse_txt"
+            android:text="@string/verse"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_below="@+id/surah_val"
+
+            />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/verse_val"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+            android:textSize="15dp"
+            android:layout_toRightOf="@+id/verse_txt"
+            android:layout_below="@+id/surah_val"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+                android:id="@+id/submit"
+            android:layout_below="@+id/verse_val"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+                android:text="Show"
+               />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/commit"
+            android:layout_below="@+id/submit"
+            android:layout_marginHorizontal="40dp"
+            android:layout_marginTop="15dp"
+
+            android:text="Commit"
+            android:gravity="center"
+          />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="بسم الله الرحمن الرحيم"
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="40dp"
+            android:background="@color/muave"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:padding="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/header"
+
+            android:id="@+id/bism"/>
+
+
+        <ScrollView
+            android:id="@+id/SCROLLER_ID"
+            android:layout_width="475dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bism"
+            android:layout_alignParentRight="true"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="22dp"
+            android:layout_marginBottom="20dp"
+            android:scrollbars="vertical">
+
+                <TextView
+                    android:id="@+id/Show_verse"
+                    android:layout_width="475dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bism"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginHorizontal="2dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="77dp"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp" />
+        </ScrollView>
+        \
+
+
+</RelativeLayout>
